@@ -1,0 +1,30 @@
+.title {
+	font-size: 20px;
+}
+
+.links {
+	font-size: 12px;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	width: 400px;
+	padding: 0;
+}
+
+.link {
+	 text-decoration: none;
+	 color: #000000;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.subtitle {
+	font-size: 20px;
+}
+
+.header-name {
+	margin: 150px 0 0 0;
+}
