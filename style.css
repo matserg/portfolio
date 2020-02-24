@@ -68,3 +68,22 @@
 	display: flex;
 	max-width: 400px;
 }
+
+.section-works {
+	background: #d1bac8;
+}
+
+.latest-works {
+	text-align: center;
+}
+
+.works-photos {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.works-photo {
+	width: 364px;
+}
