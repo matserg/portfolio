@@ -216,7 +216,7 @@ left: 34px;
  	width: 360px;
  }
 
-::placeholder {
+.input::placeholder {
 	font-size: 12px;
 	letter-spacing: 2.16px;
 	text-transform: uppercase;
