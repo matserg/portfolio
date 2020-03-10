@@ -25,6 +25,9 @@
 .title {
 	font-size: 20px;
 	font-weight: 600;
+	letter-spacing: 4.78px;
+	text-transform: uppercase;
+	line-height: 1.2;
 }
 
 .links {
@@ -34,11 +37,15 @@
 	justify-content: space-between;
 	width: 400px;
 	padding: 0;
+	font-weight: 600;
 }
 
 .link {
 	 text-decoration: none;
 	 color: #000000;
+	 line-height: 2.8;
+	 letter-spacing: 2.87px;
+	 text-transform: uppercase;
 }
 
 .header-container {
@@ -49,17 +56,16 @@
 .subtitle {
 	font-size: 20px;
 	text-transform: uppercase;
-}
-
-.header-name {
-	margin: 150px 0 0 0;
+	line-height: 0.9;
+	letter-spacing: 2px;
+	font-weight: 600;
 }
 
 .about {
 	font-size: 12px;
 	margin: 10px 0 0 0;
 	line-height: 1.6;
-	max-width: 600px;
+	max-width: 400px;
 	letter-spacing: 0.48px;
 }
 
@@ -70,7 +76,10 @@
 	text-align: center;
 	background: transparent;
 	border-radius: 20.2px;
-	padding: 16px 43px 16px 42px;
+	padding: 16px 42px 16px 43px;
+	letter-spacing: 2.87px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .header {
@@ -78,6 +87,13 @@
 	height: 714px;
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: relative;
+}
+
+.header-name {
+position: absolute;
+top: 234px;
+left: 34px;
 }
 
 .about-me {
@@ -91,11 +107,43 @@
 
 .subtitle-text {
 	font-size: 12px;
+	letter-spacing: 0.48px;
+	text-transform: lowercase;
+}
+
+.about-me-text {
+	max-width: 340px;
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: 600;
+}
+
+.down-view {
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 0.48px;
 }
 
 .about-paragraph {
 	display: flex;
-	max-width: 400px;
+	max-width: 765px;
+}
+
+.work-name {
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	font-weight: 600;
+}
+
+.year {
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: 300;
 }
 
 .section-works {
@@ -103,6 +151,13 @@
 }
 
 .latest-works {
+	text-align: center;
+}
+
+.latest-works-subtitle {
+	font-size: 12px;
+	letter-spacing: 0.48px;
+	color: rgba(0, 0, 0, 0.6);
 	text-align: center;
 }
 
@@ -134,4 +189,49 @@
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+
+.photo-text {
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.inputs {
+	display: flex;
+	flex-direction: column;
+	padding-right: 45px;
+}
+
+.input {
+	border: none;
+ 	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+ 	width: 360px;
+ }
+
+ .textarea {
+ 	border: none;
+ 	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+ 	width: 360px;
+ }
+
+::placeholder {
+	font-size: 12px;
+	letter-spacing: 2.16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.container-form {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.send {
+	background-color: #000000;
+	position: absolute;
+	left: 50%;
 }
