@@ -204,34 +204,25 @@ left: 34px;
 	padding-right: 45px;
 }
 
-.input {
+.input, .textarea {
 	border: none;
  	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
  	width: 360px;
  }
 
- .textarea {
- 	border: none;
- 	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
- 	width: 360px;
- }
-
 .input::placeholder {
-	font-size: 12px;
-	letter-spacing: 2.16px;
-	text-transform: uppercase;
-	font-weight: 600;
 	color: rgba(0, 0, 0, 0.5);
 }
 
 .container-form {
 	display: flex;
 	justify-content: center;
-	position: relative;
 }
 
 .send {
 	background-color: #000000;
-	position: absolute;
-	left: 50%;
+}
+
+.form {
+	text-align: center;
 }
