@@ -25,9 +25,10 @@
 .title {
 	font-size: 20px;
 	font-weight: 600;
-	letter-spacing: 4.78px;
+	letter-spacing: 5.5px;
 	text-transform: uppercase;
 	line-height: 1.2;
+	max-width: 100px;
 }
 
 .links {
@@ -35,9 +36,10 @@
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
-	width: 400px;
+	width: 255px;
 	padding: 0;
 	font-weight: 600;
+	padding: 8px 40px 0 0;
 }
 
 .link {
@@ -51,22 +53,23 @@
 .header-container {
 	display: flex;
 	justify-content: space-between;
+	padding: 13px 0 0 37px;
 }
 
 .subtitle {
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 0.9;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	font-weight: 600;
 }
 
 .about {
 	font-size: 12px;
-	margin: 10px 0 0 0;
+	margin: 30px 0 0 0;
 	line-height: 1.6;
 	max-width: 400px;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.54px;
 }
 
 .button {
@@ -76,10 +79,11 @@
 	text-align: center;
 	background: transparent;
 	border-radius: 20.2px;
-	padding: 16px 42px 16px 43px;
-	letter-spacing: 2.87px;
+	padding: 11px 35px 11px 40px;
+	letter-spacing: 3.6px;
 	font-weight: 600;
 	text-transform: uppercase;
+	margin: 58px 13px 0 0;
 }
 
 .header {
@@ -92,51 +96,82 @@
 
 .header-name {
 position: absolute;
-top: 234px;
+top: 229px;
 left: 34px;
 }
 
 .about-me {
 	display: flex;
+	margin: 28px 0 0 35px;
 }
 
 .about-img {
 	width: 308px;
   	height: 340px;
+  	margin: 15px 0 50px 0;
 }
 
 .subtitle-text {
 	font-size: 12px;
 	letter-spacing: 0.48px;
 	text-transform: lowercase;
+	padding-left: 3px;
 }
 
 .about-me-text {
-	max-width: 340px;
+	max-width: 345px;
 	font-size: 12px;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.58px;
 	color: rgba(0, 0, 0, 0.7);
 	font-weight: 600;
+	margin: 24px 0 0 0;
+}
+
+.l-s-3-3 {
+	letter-spacing: 3.3px;
+}
+
+.about-me-cv {
+	margin: 35px 0 0 79px;
 }
 
 .down-view {
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	font-size: 12px;
-	letter-spacing: 0.48px;
+	position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    border-bottom: 1px solid;
+    padding: 22px 0 0 0px;
+    display: block;
+    width: 145px;
+}
+
+.down-view::before {
+	content: "";
+    background: url(image/play-button.png);
+    background-size: 20px;
+    transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
 }
 
 .about-paragraph {
 	display: flex;
-	max-width: 765px;
+	max-width: 900px;
+	margin: 0 0 66px 55px;
 }
 
 .work-name {
 	font-size: 12px;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.59px;
 	font-weight: 600;
+	margin: 24px 0 0 0;
 }
 
 .year {
@@ -145,28 +180,41 @@ left: 34px;
 	letter-spacing: 0.48px;
 	color: rgba(0, 0, 0, 0.7);
 	font-weight: 300;
+	display: block;
+	padding: 4px 0 0 0;
+}
+
+.last-work {
+	padding: 35px 0 0 170px;
 }
 
 .section-works {
 	background: #d1bac8;
+	margin: 6px 0 0 0;
 }
 
 .latest-works {
 	text-align: center;
+	padding: 36px 0 0 4px;
+}
+
+.ls-2-5 {
+	letter-spacing: 2.5px;
+    padding: 3px 0 0 0;
+    margin-bottom: 13px;
 }
 
 .latest-works-subtitle {
 	font-size: 12px;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.56px;
 	color: rgba(0, 0, 0, 0.6);
 	text-align: center;
+	padding: 22px 4px 0 0;
 }
 
 .works-photos {
 	display: flex;
 	list-style: none;
-	justify-content: space-between;
-	padding: 0;
 }
 
 .works-photo {
@@ -176,6 +224,7 @@ left: 34px;
 .portfolio-item {
 	position: relative;
 	height: 235px;
+    margin: 29px 16px 64px 0px;
 }
 
 .portfolio-item::before {
@@ -199,7 +248,7 @@ left: 34px;
 
 .portfolio-item-text {
 	position: absolute;
-	bottom: 0;
+	bottom: 18px;
 	width: 100%;
 	opacity: 0;
 	transition: all 2s;
@@ -208,22 +257,32 @@ left: 34px;
 .photo-text {
 	font-size: 20px;
 	font-weight: 600;
-	letter-spacing: 3px;
+	letter-spacing: 3.3px;
 	text-transform: uppercase;
+	padding-left: 37px;
+	margin-bottom: 9px;
+}
+
+.photo-text-2 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    padding: 38px 0 0 38px;
 }
 
 .inputs {
 	display: flex;
 	flex-direction: column;
-	padding-right: 45px;
+	padding: 50px 45px 0px 155px;
 }
 
 .input, .textarea {
 	border: none;
  	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
  	width: 360px;
- 	padding: 10px 5px 5px;
- 	margin: 0 0 30px 0;
+ 	padding: 12px 0px 4px;
+ 	margin: 0 0 31px 0;
  	letter-spacing: 2.16px;
  	font-size: 12px;
  	font-weight: 600;
@@ -232,6 +291,8 @@ left: 34px;
 
  .textarea {
  	width: 40%;
+ 	padding-top: 52px;
+    letter-spacing: 3px;
  }
 
 .input::placeholder {
@@ -246,13 +307,17 @@ left: 34px;
 .container-form {
 	display: flex;
 	justify-content: center;
-	margin: 30px 0;
+	margin: 30px 0 0 0;
 }
 
 .send {
 	background-color: #000000;
+    margin: 15px 0px 0px 40px;
+    padding: 13px 35px 13px 52px;
+    letter-spacing: 3px;
 }
 
 .form {
 	text-align: center;
+	padding-bottom: 75px;
 }
