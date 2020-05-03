@@ -295,6 +295,17 @@ left: 34px;
     padding: 38px 0 0 38px;
 }
 
+.photo-text-2::after {
+	content: "";
+    background: url(image/arrow-black.png);
+    background-repeat: no-repeat;
+    background-size: 11px;
+    width: 11px;
+    height: 9px;
+    margin-left: 19px;
+    display: inline-block;
+}
+
 .inputs {
 	display: flex;
 	flex-direction: column;
@@ -341,14 +352,15 @@ left: 34px;
 
 .send {
 	background-color: #000000;
-    margin: 15px 0px 0px 40px;
-    padding: 13px 35px 13px 52px;
-    letter-spacing: 3px;
+    margin: 15px 11px 0px 48px;
+    padding: 13px 31px 13px 29px;
+    letter-spacing: 3.5px;
+    text-align: center;
 }
 
 .send::before {
 	content: "";
-	margin: -13px 0px 0px -52px;
+	margin: -13px 0px 0px -29px;
 	position: absolute;
 	opacity: 0;
 	transition: all 1s;
@@ -357,6 +369,17 @@ left: 34px;
 .send:hover::before {
 	opacity: 1;
 	cursor: pointer;
+}
+
+.send::after {
+	content: "";
+    background: url(image/arrow-white.png);
+    background-repeat: no-repeat;
+    background-size: 11px;
+    width: 11px;
+    height: 9px;
+    margin-left: 11px;
+    display: inline-block;
 }
 
 .form {
