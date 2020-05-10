@@ -22,16 +22,27 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-.title {
-	font-size: 20px;
-	font-weight: 600;
-	letter-spacing: 5.5px;
-	text-transform: uppercase;
-	line-height: 1.2;
-	max-width: 100px;
+.header {
+	background-image: url("image/background.jpg");
+	height: 714px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
-.links {
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	padding: 13px 0 0 37px;
+}
+
+.header__intro {
+position: absolute;
+top: 229px;
+left: 34px;
+}
+
+.menu {
 	font-size: 12px;
 	display: flex;
 	list-style: none;
@@ -42,7 +53,7 @@
 	padding: 8px 40px 0 0;
 }
 
-.link {
+.menu__link {
 	 text-decoration: none;
 	 color: #000000;
 	 line-height: 2.8;
@@ -50,10 +61,13 @@
 	 text-transform: uppercase;
 }
 
-.header-container {
-	display: flex;
-	justify-content: space-between;
-	padding: 13px 0 0 37px;
+.title {
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 5.5px;
+	text-transform: uppercase;
+	line-height: 1.2;
+	max-width: 100px;
 }
 
 .subtitle {
@@ -64,7 +78,12 @@
 	font-weight: 600;
 }
 
-.about {
+.subtitle__about {
+	display: block;
+	letter-spacing: 3.3px;
+}
+
+.paragraph {
 	font-size: 12px;
 	margin: 30px 0 0 0;
 	line-height: 1.6;
@@ -109,39 +128,31 @@
 	outline: none;
 }
 
-.header {
-	background-image: url("image/background.jpg");
-	height: 714px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-}
-
-.header-name {
-position: absolute;
-top: 229px;
-left: 34px;
-}
-
-.about-me {
+.about {
 	display: flex;
 	margin: 28px 0 0 35px;
 }
 
-.about-img {
+.imagePortfolio__image {
 	width: 308px;
   	height: 340px;
   	margin: 15px 0 50px 0;
 }
 
-.subtitle-text {
+.subtitle__text {
 	font-size: 12px;
 	letter-spacing: 0.48px;
 	text-transform: lowercase;
 	padding-left: 3px;
 }
 
-.about-me-text {
+.introduction {
+	display: flex;
+	max-width: 900px;
+	margin: 0 0 66px 55px;
+}
+
+.introduction__text {
 	max-width: 345px;
 	font-size: 12px;
 	line-height: 1.5;
@@ -151,15 +162,11 @@ left: 34px;
 	margin: 24px 0 0 0;
 }
 
-.l-s-3-3 {
-	letter-spacing: 3.3px;
-}
-
-.about-me-cv {
+.introduction__right {
 	margin: 35px 0 0 79px;
 }
 
-.down-view {
+.introduction__link {
 	position: relative;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -171,7 +178,7 @@ left: 34px;
     width: 145px;
 }
 
-.down-view::before {
+.introduction__link::before {
 	content: "";
     background: url(image/play-button.png);
     background-size: 20px;
@@ -183,13 +190,7 @@ left: 34px;
     margin-right: 15px;
 }
 
-.about-paragraph {
-	display: flex;
-	max-width: 900px;
-	margin: 0 0 66px 55px;
-}
-
-.work-name {
+.work__title {
 	font-size: 12px;
 	line-height: 1.5;
 	letter-spacing: 0.59px;
@@ -197,7 +198,7 @@ left: 34px;
 	margin: 24px 0 0 0;
 }
 
-.year {
+.work__date {
 	font-size: 12px;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
@@ -207,27 +208,27 @@ left: 34px;
 	padding: 4px 0 0 0;
 }
 
-.last-work {
+.lastWork {
 	padding: 35px 0 0 170px;
 }
 
-.section-works {
+.projects {
 	background: #d1bac8;
 	margin: 6px 0 0 0;
 }
 
-.latest-works {
+.projects__title {
 	text-align: center;
 	padding: 36px 0 0 4px;
 }
 
-.ls-2-5 {
+.subtitle__projects {
 	letter-spacing: 2.5px;
     padding: 3px 0 0 0;
     margin-bottom: 13px;
 }
 
-.latest-works-subtitle {
+.projects__title_long {
 	font-size: 12px;
 	letter-spacing: 0.56px;
 	color: rgba(0, 0, 0, 0.6);
@@ -235,23 +236,18 @@ left: 34px;
 	padding: 22px 4px 0 0;
 }
 
-.works-photos {
+.portfolio {
 	display: flex;
 	list-style: none;
 }
 
-.works-photo {
-	width: 364px;
-	height: 235px;
-}
-
-.portfolio-item {
+.portfolioItem {
 	position: relative;
 	height: 235px;
     margin: 29px 16px 64px 0px;
 }
 
-.portfolio-item::before {
+.portfolioItem::before {
 	content: "";
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
@@ -261,16 +257,21 @@ left: 34px;
 	transition: all 2s;
 }
 
-.portfolio-item:hover .portfolio-item-text {
+.portfolioItem:hover .photoText {
 	opacity: 1;
 }
 
-.portfolio-item:hover::before {
+.portfolioItem:hover::before {
 	opacity: 1;
 	cursor: pointer;
 }
 
-.portfolio-item-text {
+.portfolioItem__photo {
+	width: 364px;
+	height: 235px;
+}
+
+.photoText {
 	position: absolute;
 	bottom: 18px;
 	width: 100%;
@@ -278,7 +279,7 @@ left: 34px;
 	transition: all 2s;
 }
 
-.photo-text {
+.photoText__title {
 	font-size: 20px;
 	font-weight: 600;
 	letter-spacing: 3.3px;
@@ -287,7 +288,7 @@ left: 34px;
 	margin-bottom: 9px;
 }
 
-.photo-text-2 {
+.photoText__subtitle {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 12px;
@@ -295,7 +296,7 @@ left: 34px;
     padding: 38px 0 0 38px;
 }
 
-.photo-text-2::after {
+.photoText__subtitle::after {
 	content: "";
     background: url(image/arrow-black.png);
     background-repeat: no-repeat;
@@ -306,25 +307,47 @@ left: 34px;
     display: inline-block;
 }
 
-.inputs {
-	display: flex;
-	flex-direction: column;
-	padding: 50px 45px 0px 155px;
+.form {
+	text-align: center;
+	padding-bottom: 75px;
 }
 
-.input, .textarea {
+.form__container {
+	max-width: 920px;
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0 0 80px;
+	position: relative;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 45px 0px 155px;
+}
+
+.input__item::placeholder {
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 2.8;
+	letter-spacing: 2.16px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.input__item, .textarea {
 	border: none;
  	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
  	width: 360px;
- 	padding: 12px 0px 4px;
- 	margin: 0 0 31px 0;
+ 	padding: 10px 0px 15px;
+ 	margin: 0 0 23px 0;
  	letter-spacing: 2.16px;
  	font-size: 12px;
  	font-weight: 600;
  	text-transform: uppercase;
  }
 
- .input, .textarea:focus {
+ .input__item, .textarea:focus {
  	outline: none;
  }
 
@@ -334,26 +357,9 @@ left: 34px;
     letter-spacing: 3px;
  }
 
-.input::placeholder {
-	color: rgba(0, 0, 0, 0.5);
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 2.8;
-	letter-spacing: 2.16px;
-	font-family: 'Poppins', sans-serif;
-}
-
-.container-form {
-	max-width: 920px;
-	display: flex;
-	justify-content: space-between;
-	margin: 30px 0 0 80px;
-	position: relative;
-}
-
 .send {
 	background-color: #000000;
-    margin: 15px 11px 0px 48px;
+    margin: 22px 11px 0px 48px;
     padding: 13px 31px 13px 29px;
     letter-spacing: 3.5px;
     text-align: center;
@@ -383,11 +389,6 @@ left: 34px;
     display: inline-block;
 }
 
-.form {
-	text-align: center;
-	padding-bottom: 75px;
-}
-
 .inner {
 	content: "";
 	letter-spacing: 2.5px;
@@ -405,6 +406,4 @@ left: 34px;
 	transition: all 1s;
 	left: 25%;
 	top: 25%;
-
-
 }
